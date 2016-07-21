@@ -1,7 +1,7 @@
 angular.module('faronBig')
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.when('', '/');
-        $urlRouterProvider.otherwise('/');
+        $urlRouterProvider.otherwise('/404');
 
         $stateProvider
             .state('home', {
@@ -23,6 +23,10 @@ angular.module('faronBig')
             .state('login', {
                 url: '/account/login',
                 templateUrl: '../views/login.html'
+            })
+            .state('error', {
+                url: '/404',
+                templateUrl: '../views/error404.html'
             });
 
 

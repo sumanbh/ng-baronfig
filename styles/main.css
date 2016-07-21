@@ -2,6 +2,7 @@ body {
     border-top: 4.5px solid #80586C;
     background: #683047;
 }
+
 .nav-wrapper a {
   letter-spacing: 1px;
     color: #a2a2a2;
@@ -9,8 +10,17 @@ body {
 nav ul a:hover{
   background: none;
 }
+
 .nav-wrapper a:hover {
   color: #5D3348;
+}
+
+.error-container {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
 }
 
 #brand-logo {
@@ -132,5 +142,3 @@ footer.page-footer .footer-copyright  {
 #mc_embed_signup .button:hover {
   background:#f3c600 !important;
 }
-
-/*!important to override*/
