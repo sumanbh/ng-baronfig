@@ -1,32 +1,118 @@
 <!DOCTYPE html>
 <html ng-app="faronBig">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="styles/base.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link rel="stylesheet" href="styles/main.scss">
-    <title>Trinklets of tomorrow</title>
-  </head>
-  <body>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="styles/materialize.min.css" media="screen,projection" />
+
+    <!-- Our styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <title>Faron Big • Trinklets for tomorrow</title>
+</head>
+
+<body>
     <header>
-      <nav class = "nav-wrapper">
-        <ul class = "nav-left left hide-on-med-and-down">
-            <li><a>SHOP</a></li>
-            <li><a>PROJECTS</a></li>
-            <li><a>OUR STORY</a></li>
-        </ul>
-        <a class = "brand-logo center">FARON BIG</a>
-        <ul class = "nav-right right hide-on-med-and-down">
-          <li><a >...</a></li>
-          <li><a >LOG IN</a></li>
-          <li><a >CART</a></li>
-        </ul>
-      </nav>
+        <nav class="nav-wrapper" style="background:#ffffff">
+
+            <ul id="main-dropdown" class="dropdown-content">
+                <li><a href="#!">CUSTOM</a></li>
+                <li><a href="#!">PLANT A TREE</a></li>
+                <li><a href="#!">BLOG</a></li>
+                <li><a href="#!">HELP</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Social Media</a></li>
+            </ul>
+
+            <ul class="nav-left left hide-on-med-and-down">
+                <li><a>SHOP</a></li>
+                <li><a>PROJECTS</a></li>
+                <li><a ui-sref='story'>OUR STORY</a></li>
+            </ul>
+
+            <a ui-sref='home' id="brand-logo" class="brand-logo center">FARON BIG</a>
+            <ul class="nav-right right hide-on-med-and-down">
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="main-dropdown">...</a></li>
+                <li><a>LOG IN</a></li>
+                <li><a>CART</a></li>
+            </ul>
+        </nav>
 
     </header>
 
-  </body>
+
+
+
+    <ui-view>
+        <div class="progress" style="background:none">
+            <div class="indeterminate" style="background:#ffffff"></div>
+        </div>
+    </ui-view>
+
+
+
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 m4 s12">
+                    <p class='footer-info-left'>
+                        <a class='hide-on-med-and-down brand-hero' ui-sref='home'>FARON BIG &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-major' ui-sref='home'>SHOP &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-major' ui-sref='home'>PRESS &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-major' ui-sref='home'>ABOUT &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-major' ui-sref='home'>HELP</a></p>
+
+                    <p style='margin-top:10px'> <a class='footer-secondary' ui-sref='home'>Custom Notebooks &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-secondary' ui-sref='home'>Wholesale &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-secondary' ui-sref='home'>Feedback &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-secondary' ui-sref='home'>Returns &nbsp; &nbsp; &nbsp;
+                        <a class='footer-secondary' ui-sref='home'>Our Story &nbsp; &nbsp; &nbsp;
+                        <a class='footer-secondary' ui-sref='home'>Blog &nbsp; &nbsp; &nbsp;</a></p>
+                </div>
+                <div class="col l4 offset-l2 m4 s12">
+                    <p class='footer-info-right'>
+                        <a class="white-text" ui-sref='home'>STAY UPDATED</a></br></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                      © 2016 FARON BIG
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+
+                        <a class="footer-major" href="#!">Designed in the middle of nowhere.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery, materialize, Angular and ui-router-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="scripts/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <!--Our Script Files-->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/routs.js"></script>
+    <script src="./scripts/homeCtrl.js"></script>
+
+</body>
+
 </html>
