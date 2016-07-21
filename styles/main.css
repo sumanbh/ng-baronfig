@@ -2,10 +2,17 @@ body {
     border-top: 4.5px solid #80586C;
     background: #683047;
 }
-
 .nav-wrapper a {
+  letter-spacing: 1px;
     color: #a2a2a2;
 }
+nav ul a:hover{
+  background: none;
+}
+.nav-wrapper a:hover {
+  color: #5D3348;
+}
+
 #brand-logo {
     letter-spacing: 3px;
     color: #693248;
@@ -14,12 +21,16 @@ body {
     min-width: 150px;
     margin-top: 54px;
 }
+
+.dropdown-content li>a {
+  color: #393939;
+  line-height: -100%;
+}
 .home-container {
     background: #ffffff;
 }
-
 .slider .slides li {
-  min-height: 300px;
+    min-height: 300px;
 }
 .slider .indicators .indicator-item {
     bottom: 2vw;
@@ -32,86 +43,94 @@ body {
 }
 .home-center {
     text-align: center;
-    margin: 5vh 27vw 20px 27vw;
+    margin: 5vh 27vw 4vh 27vw;
     line-height: 200%;
 }
 .product-container .row .col {
-  color: #6B6B6B;
+    color: #6B6B6B;
     text-align: center;
     border: 1.5px solid #F0F0F0;
-    padding: 10px;
+    border-bottom: 0px;
+    padding: 40px;
 }
 .product-container .row .col h6 {
-  letter-spacing: 1px;
-}
-.product-container .row .col img {
-    margin-top: 20px;
+    letter-spacing: 1px;
 }
 .product-container .row .col a {
-  color:#CD9EB1;
+    color: #CD9EB1;
 }
-
-
 .tree-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: -20px;
-  background: #F0F0F0;
-  color:#96A08C;
-  height: 15vh;
-  justify-content: center;
-  font-size: 1.2em;
+    background: #F1F2F4;
+    margin-top: -20px;
 }
-
-.tree-container img {
-  margin-top: 5vh;
-  margin-left: 1vw;
+.inner-tree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 15vh;
+    color: #96A08C;
 }
-
-.tree-container .btn {
-  margin-top: -12px;
-  margin-left: 1vw;
-  background: none;
-  color: #96A08C;
-  border: 2px solid #96A08C;
-  padding: -3px;
+.inner-tree img {
+    margin-left: 1.5vw;
 }
-
-
-
-.btn:hover {
-  background: #96A08C;
-  color: #ffffff;
+.inner-tree .learn-more-trees {
+    margin-left: 2.5vw;
+    background: none;
+    color: #96A08C;
+    border: 2px solid #96A08C;
+    padding: 10px 25px 8px 25px;
+    border-radius: 4px;
 }
-
+.inner-tree .learn-more-trees:hover {
+    background: #96A08C;
+    color: #ffffff;
+}
+@media (max-width:424px) {
+    .inner-tree h5 {
+        font-size: 20px;
+    }
+    .inner-tree .learn-more-trees {
+        padding: 5px 10px;
+    }
+}
 footer.page-footer {
-  background: #683047;
-  display: flex;
-  flex-direction: column;
+    background: #683047;
+    display: flex;
+    flex-direction: column;
 }
-
 .footer-info-left {
-  display: inline;
+    display: inline;
 }
-
 .brand-hero {
-  color: #ffffff;
-  font-size: 1.5em;
+    color: #ffffff;
+    font-size: 1.5em;
 }
-
 .footer-major {
-  color: #D8C7CF;
+    color: #D8C7CF;
+    font-size: 12.5px;
+    margin-right: 10px;
 }
-
 .footer-secondary {
-  color: #99798D;
-  font-size: .9em;
+    color: #99798D;
+    font-size: .9em;
+    margin-right: 10px;
 }
 
-.footer-info-right{
-  margin-top: 10px;
+footer.page-footer .footer-copyright  {
+    background: #41182A ;
 }
 
-footer.page-footer .footer-copyright{
-  background: #41182A;
+#mc_embed_signup input.email {
+  border-radius: 0px !important;
 }
+
+#mc_embed_signup .button{
+  padding: 0 !important;
+  text-align: center !important;
+  border-radius: 0px !important;
+}
+#mc_embed_signup .button:hover {
+  background:#f3c600 !important;
+}
+
+/*!important to override*/

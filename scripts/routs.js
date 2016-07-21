@@ -1,7 +1,7 @@
 angular.module('faronBig')
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.when('', '/');
-        $urlRouterProvider.otherwise('/error');
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
             .state('home', {
@@ -9,8 +9,20 @@ angular.module('faronBig')
                 templateUrl: '../views/home.html'
             })
             .state('story', {
-                url: '/our-story',
+                url: '/pages/our-story',
                 templateUrl: '../views/ourStory.html'
+            })
+            .state('projects', {
+                url: '/pages/projects',
+                templateUrl: '../views/projects.html'
+            })
+            .state('shop', {
+                url: '/pages/shop',
+                templateUrl: '../views/shop.html'
+            })
+            .state('login', {
+                url: '/account/login',
+                templateUrl: '../views/login.html'
             });
 
 

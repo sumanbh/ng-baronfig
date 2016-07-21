@@ -33,16 +33,16 @@
             </ul>
 
             <ul class="nav-left left hide-on-med-and-down">
-                <li><a>SHOP</a></li>
-                <li><a>PROJECTS</a></li>
+                <li><a ui-sref='shop'>SHOP</a></li>
+                <li><a ui-sref='projects'>PROJECTS</a></li>
                 <li><a ui-sref='story'>OUR STORY</a></li>
             </ul>
 
             <a ui-sref='home' id="brand-logo" class="brand-logo center">FARON BIG</a>
             <ul class="nav-right right hide-on-med-and-down">
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="main-dropdown">...</a></li>
-                <li><a>LOG IN</a></li>
+                <li><a class="dropdown-button" href="#!" data-activates="main-dropdown"><span style="font-size:25px;">···</span></a></li>
+                <li><a ui-sref='login'>LOG IN</a></li>
                 <li><a>CART</a></li>
             </ul>
         </nav>
@@ -65,24 +65,45 @@
     <footer class="page-footer">
         <div class="container">
             <div class="row">
-                <div class="col l6 m4 s12">
+                <div class="col l6 m7 s12">
                     <p class='footer-info-left'>
                         <a class='hide-on-med-and-down brand-hero' ui-sref='home'>FARON BIG &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-major' ui-sref='home'>SHOP &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-major' ui-sref='home'>PRESS &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-major' ui-sref='home'>ABOUT &nbsp; &nbsp; &nbsp; </a>
+                        <a class='footer-major' ui-sref='home'>SHOP  </a>
+                        <a class='footer-major' ui-sref='home'>PRESS </a>
+                        <a class='footer-major' ui-sref='home'>ABOUT  </a>
                         <a class='footer-major' ui-sref='home'>HELP</a></p>
 
-                    <p style='margin-top:10px'> <a class='footer-secondary' ui-sref='home'>Custom Notebooks &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-secondary' ui-sref='home'>Wholesale &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-secondary' ui-sref='home'>Feedback &nbsp; &nbsp; &nbsp; </a>
-                        <a class='footer-secondary' ui-sref='home'>Returns &nbsp; &nbsp; &nbsp;
-                        <a class='footer-secondary' ui-sref='home'>Our Story &nbsp; &nbsp; &nbsp;
-                        <a class='footer-secondary' ui-sref='home'>Blog &nbsp; &nbsp; &nbsp;</a></p>
+                    <p style='margin-top:10px'> <a class='footer-secondary' ui-sref='home'>Custom Notebooks </a>
+                        <a class='footer-secondary' ui-sref='home'>Wholesale  </a>
+                        <a class='footer-secondary' ui-sref='home'>Feedback  </a>
+                        <a class='footer-secondary' ui-sref='home'>Returns
+                        <a class='footer-secondary' ui-sref='home'>Our Story
+                        <a class='footer-secondary' ui-sref='home'>Blog </a></p>
                 </div>
-                <div class="col l4 offset-l2 m4 s12">
+                <div class="col l4 offset-l2 m5 offset-m0 s12">
                     <p class='footer-info-right'>
-                        <a class="white-text" ui-sref='home'>STAY UPDATED</a></br></p>
+                        <a class="white-text" ui-sref='home'>STAY UPDATED</a> </p>
+
+                        <!-- Begin MailChimp Signup Form -->
+                        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                        <style type="text/css">
+                        	#mc_embed_signup{background:#683047; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+                        	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                        	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                        </style>
+                        <div id="mc_embed_signup">
+                        <form action="//sumanb.us13.list-manage.com/subscribe/post?u=24a419b8cd6ed04529ae398d5&amp;id=b19e73faaa" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate style="text-align:left;">
+                            <div id="mc_embed_signup_scroll">
+
+                        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address" required style="width:140px;height:33px;">
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_24a419b8cd6ed04529ae398d5_b19e73faaa" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="SUBMIT" name="subscribe" id="mc-embedded-subscribe" class="button" style="width:70px;height:33px; background:#ffd969; color:#683047;"></div>
+                            </div>
+                        </form>
+                        </div>
+
+                        <!--End mc_embed_signup-->
                 </div>
             </div>
         </div>
