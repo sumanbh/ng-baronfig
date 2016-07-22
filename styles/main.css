@@ -37,6 +37,29 @@ nav ul a:hover {
 .slider .slides li {
     min-height: 300px;
 }
+@media (max-width:601px) {
+    .home-container .slider {
+        min-height: 75vh !important;
+    }
+    .slider .slides li {
+        min-height: 75vh;
+    }
+    .slider .slides li:nth-child(1) img {
+        background-image: url("../images/001.jpg") !important;
+    }
+    .slider .slides li:nth-child(2) img {
+        background-image: url("../images/002.jpg") !important;
+    }
+    .slider .slides li:nth-child(3) img {
+        background-image: url("../images/003.jpg") !important;
+    }
+    .slider .slides li:nth-child(4) img {
+        background-image: url("../images/004.jpg") !important;
+    }
+    .slider .slides li:nth-child(5) img {
+        background-image: url("../images/005.jpg") !important;
+    }
+}
 .slider .indicators .indicator-item {
     bottom: 2vw;
     background-color: transparent;
@@ -46,13 +69,11 @@ nav ul a:hover {
 .slider .indicators .indicator-item.active {
     background-color: #ffffff;
 }
-
 .home-center {
-  text-align: center;
+    text-align: center;
     line-height: 200%;
     min-height: 15vh;
 }
-
 .product-container .row .col {
     color: #6B6B6B;
     text-align: center;
@@ -101,12 +122,11 @@ nav ul a:hover {
         padding: 5px 10px;
     }
 }
-
 @media (min-width:601px) and (max-width:768px) {
-  .product-container img {
-    height: 150px;
-    width: 150px;
-  }
+    .product-container img {
+        height: 150px;
+        width: 150px;
+    }
 }
 footer.page-footer {
     background: #683047;
@@ -130,7 +150,6 @@ footer.page-footer {
     font-size: .9em;
     margin-right: 10px;
 }
-
 @media only screen and (max-width: 601px) {
     footer.page-footer .container {
         text-align: center;
@@ -147,7 +166,6 @@ footer.page-footer {
         width: inherit !important;
     }
 }
-
 footer.page-footer .footer-copyright {
     background: #41182A;
 }

@@ -4,11 +4,11 @@ app.directive('imgSlide', function() {
     return {
         link: function(scope, element, attr){
           element.slider().css({
-            'height': '45vw',
+            'height': '42vw',
             'min-height': '300px'
           });
            element.find(".slides").css({
-             'height': '45vw',
+             'height': '42vw',
              'min-height': '300px'
            });
       }

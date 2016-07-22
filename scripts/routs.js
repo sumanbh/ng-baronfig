@@ -27,6 +27,12 @@ angular.module('faronBig')
             .state('error', {
                 url: '/404',
                 templateUrl: './views/error404.html'
+            })
+            .state('buy', {
+              url: ':/shop?',
+              views: {
+                
+              }
             });
 
 
