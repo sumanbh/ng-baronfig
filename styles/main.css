@@ -46,11 +46,13 @@ nav ul a:hover {
 .slider .indicators .indicator-item.active {
     background-color: #ffffff;
 }
+
 .home-center {
-    text-align: center;
-    margin: 5vh 27vw 4vh 27vw;
+  text-align: center;
     line-height: 200%;
+    min-height: 15vh;
 }
+
 .product-container .row .col {
     color: #6B6B6B;
     text-align: center;
@@ -72,6 +74,7 @@ nav ul a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     min-height: 15vh;
     color: #96A08C;
 }
@@ -92,11 +95,18 @@ nav ul a:hover {
 }
 @media (max-width:424px) {
     .inner-tree h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .inner-tree .learn-more-trees {
         padding: 5px 10px;
     }
+}
+
+@media (min-width:601px) and (max-width:768px) {
+  .product-container img {
+    height: 150px;
+    width: 150px;
+  }
 }
 footer.page-footer {
     background: #683047;
