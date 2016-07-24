@@ -190,3 +190,68 @@ footer.page-footer .footer-copyright {
 #mc_embed_signup .button:hover {
     background: #f3c600 !important;
 }
+
+
+/*Shop html CSS*/
+
+.recommend-container {
+  margin-top: -20px;
+  background: #ffffff;
+  min-height: 30vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-bottom: 12px solid #E7EAEF;
+}
+
+.shop-container .row .product-container {
+  margin-top: 50px;
+  padding: 0 20px 0 20px;
+}
+
+.other-products {
+  margin-top: 10vh;
+}
+
+.product-intro h4{
+  font-weight: 300;
+  color: #683047;
+}
+
+.product-intro p {
+  color: #909090;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.user-selection {
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.user-selection label {
+  font-size: 14px;
+  color: #909090;
+  width: 30%;
+}
+
+.user-selection select{
+  width: 70%;
+  border: 2px solid #d4d4d4;
+  color: #683047;
+  font-size: 14px;
+}
+
+.user-selection .quantity-box{
+  margin-left: 60%;
+  width: 20%;
+  float: right;
+  color: #683047;
+}
+
+.user-cost {
+  width: 20%
+}

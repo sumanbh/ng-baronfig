@@ -10,14 +10,12 @@ app.controller('mainCtrl', function($state, mainSrv) {
     var getId = $state.params.id;
 
     // Searching the product in the array
-    function findProductById(product) {
-        return product.id == getId;
-    }
-
+    function findProductById(product) {return product.id === getId;}
     vm.result = vm.product.find(findProductById);
 
     // Calculations depending the amount user wants to buy
     vm.finalPrice = function(num) {
+        if (!vm.totalCalc) return parseFloat('0.00').toFixed(2);
         // Percentage based deductions are stored as string and calculated below. There has to be a better way.
         if (typeof num === 'string') {
             // Bundle of two with 5% discount stored as string '5'
