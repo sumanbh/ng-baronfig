@@ -213,6 +213,12 @@ footer.page-footer .footer-copyright {
   margin-top: 10vh;
 }
 
+.product-img {
+  max-width: 100%;
+  height: 433px;
+  width: 650px;
+}
+
 .product-intro h4{
   font-weight: 300;
   color: #683047;
