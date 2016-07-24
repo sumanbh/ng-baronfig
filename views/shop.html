@@ -1,0 +1,43 @@
+<div class="shop-container" style="background:#F1F2F4">
+    <div class="row">
+        <div class="col l8 s12">
+            <img src="{{selectedItem}}" />
+        </div>
+        <div class="col l3 offset-l1 s12">
+            {{vm.result.productName}}</br>
+
+            <div>
+                {{vm.result.productDesc}}
+            </div>
+            <div>{{vm.result.color[0].name}}
+            <select class="browser-default"
+                  ng-init="selectedItem = vm.result.color[0].img"
+                  ng-model="selectedItem"
+                  ng-options="item.img as item.label for item in vm.result.color"
+                  ng-show="vm.result.color.length">
+            </select></div>
+
+            <select class="browser-default"
+                  ng-init="selectedSave = vm.result.save[0].price"
+                  ng-model="selectedSave"
+                  ng-options="save.price as save.name for save in vm.result.save"
+                  ng-show="vm.result.save.length">
+            </select>
+
+            <div>
+              Quantity: <input type="number" name="quantity"  min="1" max="1000" ng-model="vm.totalCalc" ng-init="vm.totalCalc=1">
+              Total {{vm.finalPrice(selectedSave)}}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div ng-repeat="list in vm.product">
+    {{list.productName}}
+    <a ui-sref='shop({id:list.id})'>
+        <button class="waves-effect waves-light btn" type="button">Click me</button>
+    </a>
+</div>

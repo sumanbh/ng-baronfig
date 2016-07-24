@@ -6,7 +6,8 @@ angular.module('faronBig')
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: './views/home.html'
+                templateUrl: './views/home.html',
+                controller: 'homeCtrl as vm'
             })
             .state('story', {
                 url: '/pages/our-story',
@@ -16,10 +17,6 @@ angular.module('faronBig')
                 url: '/pages/projects',
                 templateUrl: './views/projects.html'
             })
-            .state('shop', {
-                url: '/pages/shop',
-                templateUrl: './views/shop.html'
-            })
             .state('login', {
                 url: '/account/login',
                 templateUrl: './views/login.html'
@@ -28,11 +25,10 @@ angular.module('faronBig')
                 url: '/404',
                 templateUrl: './views/error404.html'
             })
-            .state('buy', {
-              url: ':/shop?',
-              views: {
-                
-              }
+            .state('shop', {
+                url: '/shop/{id}',
+                templateUrl: './views/shop.html',
+                controller: 'mainCtrl as vm'
             });
 
 
