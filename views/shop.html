@@ -1,22 +1,28 @@
 <div class="shop-container" style="background:#F1F2F4">
     <div class="row">
         <div class="col l8 s12">
+          <!-- Main image the user sees of the product -->
+
             <img src="{{selectedItem}}" />
         </div>
         <div class="col l3 offset-l1 s12">
-            {{vm.result.productName}}</br>
+          <!-- Column to the right of the image. Product description and such. -->
 
+            {{vm.result.productName}}</br>
             <div>
                 {{vm.result.productDesc}}
             </div>
-            <div>{{vm.result.color[0].name}}
+            {{vm.result.color[0].name}}
+
+            <!-- Product images. Changes the image on the left as well. -->
             <select class="browser-default"
                   ng-init="selectedItem = vm.result.color[0].img"
                   ng-model="selectedItem"
                   ng-options="item.img as item.label for item in vm.result.color"
                   ng-show="vm.result.color.length">
-            </select></div>
+            </select>
 
+            <!-- Product buy options for the user. -->
             <select class="browser-default"
                   ng-init="selectedSave = vm.result.save[0].price"
                   ng-model="selectedSave"
@@ -24,6 +30,7 @@
                   ng-show="vm.result.save.length">
             </select>
 
+            <!-- Total cost for the user. Auto updates -->
             <div>
               Quantity: <input type="number" name="quantity"  min="1" max="1000" ng-model="vm.totalCalc" ng-init="vm.totalCalc=1">
               Total {{vm.finalPrice(selectedSave)}}
@@ -34,7 +41,7 @@
 </div>
 
 
-
+<!-- Bottom container for the other items we are selling -->
 <div ng-repeat="list in vm.product">
     {{list.productName}}
     <a ui-sref='shop({id:list.id})'>

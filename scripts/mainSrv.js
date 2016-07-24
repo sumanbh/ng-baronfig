@@ -1,6 +1,8 @@
 var app = angular.module('faronBig');
 
 app.service('mainSrv', function($state) {
+
+  // Relevant data: things we are selling
     this.dataArr = [{
         productName: 'Squire',
         "id": 'squire',

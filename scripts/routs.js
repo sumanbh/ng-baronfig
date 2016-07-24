@@ -1,7 +1,9 @@
 angular.module('faronBig')
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.when('', '/');
+        $urlRouterProvider.when('/shop/', '/404');
         $urlRouterProvider.otherwise('/404');
+
 
         $stateProvider
             .state('home', {
