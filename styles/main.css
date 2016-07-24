@@ -204,13 +204,21 @@ footer.page-footer .footer-copyright {
   border-bottom: 12px solid #E7EAEF;
 }
 
+.recommend-container img{
+  width: 90%;
+  height: 100%;
+}
+
+@media (max-width:992px){
+  .recommend-container img {
+    max-width: 70% !important;
+  }
+}
+
+
 .shop-container .row .product-container {
   margin-top: 50px;
   padding: 0 20px 0 20px;
-}
-
-.other-products {
-  margin-top: 10vh;
 }
 
 .product-img {

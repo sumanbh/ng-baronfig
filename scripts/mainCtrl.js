@@ -4,14 +4,21 @@ app.controller('mainCtrl', function($state, mainSrv) {
     var vm = this;
     // Getting data to the controller
 
-    vm.product = mainSrv.dataArr;
+    var product = mainSrv.dataArr;
     // Getting the product ID
 
-    var getId = $state.params.id;
+    vm.getId = $state.params.id;
 
     // Searching the product in the array
-    function findProductById(product) {return product.id === getId;}
-    vm.result = vm.product.find(findProductById);
+    function findProductById(product) {return product.id === vm.getId;}
+    vm.result = product.find(findProductById);
+
+    //Remove the result from the product recommendation on the bottom
+
+    vm.recommend = product
+                    .filter(function(name){
+                      return name.id !== vm.getId;
+                    });
 
     // Calculations depending the amount user wants to buy
     vm.finalPrice = function(num) {
@@ -33,4 +40,15 @@ app.controller('mainCtrl', function($state, mainSrv) {
         // "Normal" or easy deductions
         return (num * vm.totalCalc).toFixed(2);
     }
+})
+
+app.directive('productOptions', function(){
+  return {
+    templateUrl: './views/shop-tmpl.html',
+    link: function(scope, element, attr){
+
+      // $('#'+scope.vm.getId).hide();
+
+    }
+  }
 })

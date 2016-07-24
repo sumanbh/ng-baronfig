@@ -24,7 +24,7 @@ app.service('mainSrv', function($state) {
         }],
         price: 55.00,
         save: [{
-            type:'SAVE',
+            type: 'SAVE',
             name: 'Single Pen',
             price: 55.00
         }, {
@@ -33,32 +33,8 @@ app.service('mainSrv', function($state) {
         }, {
             name: '3 Pack - save $36',
             price: 129.00
-        }]
-    }, {
-        productName: 'Vanguard',
-        "id": 'vanguard',
-        productDesc: "Designed for greatness. The Vanguard softcover notebook comes in Light Gray & Charcoal. It's available in 3 sizes: Pocket, Flagship, & Plus—AKA Small, Medium, & Large.",
-        color: [{
-            type: 'BOOK TYPE',
-            label: 'Light Gray - Flagship',
-            img: './images/vanguard_lg-flag.jpg'
-        }, {
-            label: 'Charcoal - Flagship',
-            img: './images/vanguard_char-flag.jpg'
         }],
-        price: 12.00,
-
-        save: [{
-            type:'SAVE',
-            name: 'Single Pack',
-            price: 12.00
-        }, {
-            name: '2 Pack - save 5%',
-            price: '5'
-        }, {
-            name: '3 Pack - save 10%',
-            price: '10'
-        }]
+        imgv2:'./images/product-v2/squire_v2.jpg'
     }, {
         productName: 'Confidant',
         "id": 'confidant',
@@ -71,7 +47,7 @@ app.service('mainSrv', function($state) {
         price: 16.00,
 
         save: [{
-            type:'SAVE',
+            type: 'SAVE',
             name: 'Single Pack',
             price: 16.00
         }, {
@@ -80,7 +56,41 @@ app.service('mainSrv', function($state) {
         }, {
             name: '3 Pack - save $4',
             price: 44.00
-        }]
+        }],
+        imgv2:'./images/product-v2/confidant_v2.jpg'
+    },
+    {
+        productName: 'Vanguard',
+        "id": 'vanguard',
+        productDesc: "Designed for greatness. The Vanguard softcover notebook comes in Light Gray & Charcoal. It's available in 3 sizes: Pocket, Flagship, & Plus—AKA Small, Medium, & Large.",
+        color: [{
+            type: 'BOOK TYPE',
+            label: 'Light Gray - Flagship',
+            img: './images/vanguard_lg-flag.jpg'
+        }, {
+            label: 'Light Gray - Pocket',
+            img: './images/vanguard_lg_pocket.jpg'
+        }, {
+            label: 'Charcoal - Flagship',
+            img: './images/vanguard_char-flag.jpg'
+        }, {
+            label: 'Charcoal - Pocket',
+            img: './images/vanguard_char_pocket.jpg'
+        }],
+        price: 12.00,
+
+        save: [{
+            type: 'SAVE',
+            name: 'Single Pack',
+            price: 12.00
+        }, {
+            name: '2 Pack - save 5%',
+            price: '5'
+        }, {
+            name: '3 Pack - save 10%',
+            price: '10'
+        }],
+        imgv2:'./images/product-v2/vanguard_v2.jpg'
     }, {
         productName: 'Guardian Leather Case',
         "id": 'guardian',
@@ -91,7 +101,7 @@ app.service('mainSrv', function($state) {
         price: 85.00,
 
         save: [{
-            type:'SAVE',
+            type: 'SAVE',
             name: 'Single Case',
             price: 85.00
         }, {
@@ -100,6 +110,28 @@ app.service('mainSrv', function($state) {
         }, {
             name: '3 Pack - save $25',
             price: 230.00
-        }]
+        }],
+        imgv2:'./images/product-v2/guardian_v2.jpg'
+    }, {
+        productName: 'Explorer Apprentice',
+        "id": 'explorer',
+        productDesc: 'Your mind and the world around you are both places that deserve to be explored. Grab your notebook, don your raincoat, steel your willpower, and blaze a trail through the literal and figurative.',
+        color: [{
+            img: './images/explorer.jpg'
+        }],
+        price: 9.00,
+
+        save: [{
+            type: 'SAVE',
+            name: 'Single Pack',
+            price: 9.00
+        }, {
+            name: '2 Packs - save $1',
+            price: 17.00
+        }, {
+            name: '3 Pack - save $3',
+            price: 24.00
+        }],
+        imgv2:'./images/product-v2/explorer_v2.jpg'
     }]
 })

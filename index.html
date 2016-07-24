@@ -22,7 +22,7 @@
 
 <body>
     <header>
-      <!-- Top navigation -->
+        <!-- Top navigation -->
         <nav class="nav-wrapper" style="background:#ffffff">
 
             <ul id="main-dropdown" class="dropdown-content">
@@ -43,9 +43,18 @@
             <a ui-sref='home' id="brand-logo" class="brand-logo center">FARON BIG</a>
             <ul class="nav-right right hide-on-med-and-down">
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="main-dropdown"><span style="font-size:25px;">···</span></a></li>
+                <li><a class="dropdown-button" data-activates="main-dropdown"><span style="font-size:25px;">···</span></a></li>
                 <li><a ui-sref='login'>LOG IN</a></li>
                 <li><a>CART</a></li>
+            </ul>
+
+            <!-- Mobile side navbar below. Activates through custom.js -->
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a ui-sref='shop({id:"squire"})'>SHOP</a></li>
+                <li><a ui-sref='projects'>PROJECTS</a></li>
+                <li><a ui-sref='story'>OUR STORY</a></li>
+                <li><a ui-sref='login'>LOG IN</a></li>
             </ul>
         </nav>
 
@@ -145,11 +154,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 
     <!--Our Script Files-->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/routs.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/routs.js"></script>
     <script src="./scripts/homeCtrl.js"></script>
     <script src="./scripts/mainCtrl.js"></script>
     <script src="./scripts/mainSrv.js"></script>
+    <script src="./scripts/custom.js"></script>
 
 
 </body>
