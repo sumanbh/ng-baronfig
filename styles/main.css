@@ -49,10 +49,10 @@ nav ul a:hover {
 }
 @media (max-width:601px) {
     .home-container .slider {
-        min-height: 75vh !important;
+      height: 120vw !important;
     }
     .slider .slides li {
-        min-height: 75vh;
+        height: 100%;
     }
     .slider .slides li:nth-child(1) img {
         background-image: url("../images/001.jpg") !important;
