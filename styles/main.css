@@ -74,7 +74,6 @@ nav ul a:hover {
     bottom: 2vw;
     background-color: transparent;
     border: 1.5px solid #e0e0e0;
-    z-index: 9000;
 }
 .slider .indicators .indicator-item.active {
     background-color: #ffffff;
