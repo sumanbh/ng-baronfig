@@ -1,20 +1,22 @@
 <div class="shop-container" style="background:#F1F2F4">
   <!-- Template for the product below -->
 
-    <product-options></product-options>
-</div>
+    <product-options>
 
-<!-- Bottom container for the other items we are selling -->
+    </product-options>
 
-<div class="recommend-container">
-  <div class="row">
-    <h5 style="color:#683047; letter-spacing:2px;padding-top:5vh;font-weight:300;">RECOMMENDED</h5>
-      <div id="{{list.id}}" class=" other-products col l3 m12 s12" ng-repeat="list in vm.recommend">
-        <!-- Recommendation images and description below -->
+    <!-- Bottom container for the other items we are selling -->
 
-        <img ng-src="{{list.imgv2}}" />
-        <div style="color: #6B6B6B; letter-spacing: 1px;font-weight:300;">{{list.productName.toUpperCase()}}</div>
-        <div style="margin-top:10px"><a style="color: #CD9EB1;" ui-sref='shop({id:list.id})'>Buy »</a></div>
+    <div class="recommend-container">
+      <div class="row">
+        <h5 style="color:#683047; letter-spacing:2px;padding-top:5vh;font-weight:300;">RECOMMENDED</h5>
+          <div id="{{list.id}}" class=" other-products col l3 m12 s12" ng-repeat="list in vm.recommend">
+            <!-- Recommendation images and description below -->
+
+            <img ng-src="{{list.imgv2}}" />
+            <div style="color: #6B6B6B; letter-spacing: 1px;font-weight:300;">{{list.productName.toUpperCase()}}</div>
+            <div style="margin-top:10px"><a style="color: #CD9EB1;" ui-sref='shop({id:list.id})'>Buy »</a></div>
+          </div>
       </div>
-  </div>
+    </div>
 </div>

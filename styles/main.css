@@ -8,6 +8,7 @@ body {
 main {
     flex: 1 0 auto;
 }
+
 .nav-wrapper{
   height: 68px;
 }
@@ -44,30 +45,37 @@ nav ul a:hover {
 .home-container {
     background: #ffffff;
 }
-.slider .slides li {
-    min-height: 300px;
+.slider {
+  height: 42vw !important;
+  min-height': '300px';
 }
+
+.slider .slides {
+  min-height: 300px;
+  height: 42vw !important;
+}
+
 @media (max-width:601px) {
     .home-container .slider {
-      height: 120vw !important;
+      height: 130vw !important;
     }
     .slider .slides li {
         height: 100%;
     }
     .slider .slides li:nth-child(1) img {
-        background-image: url("../images/001.jpg") !important;
+        background-image: url("../images/vanguard_001.jpg") !important;
     }
     .slider .slides li:nth-child(2) img {
-        background-image: url("../images/002.jpg") !important;
+        background-image: url("../images/squire_002.jpg") !important;
     }
     .slider .slides li:nth-child(3) img {
-        background-image: url("../images/003.jpg") !important;
+        background-image: url("../images/explorer_003.jpg") !important;
     }
     .slider .slides li:nth-child(4) img {
-        background-image: url("../images/004.jpg") !important;
+        background-image: url("../images/guardian_004.jpg") !important;
     }
     .slider .slides li:nth-child(5) img {
-        background-image: url("../images/005.jpg") !important;
+        background-image: url("../images/youbaron_005.jpg") !important;
     }
 }
 .slider .indicators .indicator-item {
@@ -75,6 +83,9 @@ nav ul a:hover {
     background-color: transparent;
     border: 1.5px solid #e0e0e0;
     z-index: 5;
+    height: 14px;
+    width: 14px;
+    margin-right: 0px;
 }
 .slider .indicators .indicator-item.active {
     background-color: #ffffff;
@@ -214,7 +225,6 @@ footer.page-footer .footer-copyright {
     max-width: 70% !important;
   }
 }
-
 
 .shop-container .row .product-container {
   margin-top: 50px;
