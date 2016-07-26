@@ -7,17 +7,17 @@ app.controller('mainCtrl', function($state, mainSrv) {
     var product = mainSrv.dataArr;
     // Getting the product ID
 
-    vm.getId = $state.params.id;
+    var getId = $state.params.id;
 
     // Searching the product in the array
-    function findProductById(product) {return product.id === vm.getId;}
+    function findProductById(product) {return product.id === getId;}
     vm.result = product.find(findProductById);
 
     //Remove the result from the product recommendation on the bottom
 
     vm.recommend = product
                     .filter(function(name){
-                      return name.id !== vm.getId;
+                      return name.id !== getId;
                     });
 
     // Calculations depending the amount user wants to buy
@@ -46,8 +46,6 @@ app.directive('productOptions', function(){
   return {
     templateUrl: './views/shop-tmpl.html',
     link: function(scope, element, attr){
-
-      // $('#'+scope.vm.getId).hide();
 
     }
   }

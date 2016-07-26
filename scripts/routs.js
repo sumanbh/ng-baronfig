@@ -17,7 +17,8 @@ angular.module('faronBig')
             })
             .state('projects', {
                 url: '/pages/projects',
-                templateUrl: './views/projects.html'
+                templateUrl: './views/projects.html',
+                controller: 'projectCtrl as vm'
             })
             .state('login', {
                 url: '/account/login',

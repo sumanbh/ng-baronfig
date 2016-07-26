@@ -1,10 +1,10 @@
 var app = angular.module('faronBig');
 
-app.controller('homeCtrl', function(){
+app.controller('projectCtrl', function(){
 
 })
 
-app.directive('imgSlide', function() {
+app.directive('powerSlide', function() {
     return {
         link: function(scope, element, attr){
           element.slider();
