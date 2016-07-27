@@ -8,6 +8,33 @@ body {
 main {
     flex: 1 0 auto;
 }
+input[type]:focus:not([readonly]) {
+    border-bottom: 1px solid #5D3348;
+    box-shadow: 0 1px 0 0 #5D3348;
+}
+
+/*ngAnimate begins*/
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: all 1s ease;
+}
+[ui-view].ng-enter {
+    opacity: 0;
+    transform: scale3d(.96, .96, .96);
+}
+[ui-view].ng-enter-active {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+}
+[ui-view].ng-leave-active {
+    opacity: 0;
+}
+
+/*ngAnimate ends here*/
+
 .nav-wrapper {
     height: 68px;
 }
@@ -311,21 +338,19 @@ footer.page-footer .footer-copyright {
     margin-left: 10%;
     width: auto;
 }
-
 .projects-bottom #mc_embed_signup input.email {
-  width: 75%;
+    width: 75%;
 }
 .projects-bottom #mc_embed_signup_scroll {
-  display: flex;
+    display: flex;
 }
-
 @media (max-width:601px) {
-  .projects-bottom {
-    margin-top: 20px;
-  }
-  .projects-bottom h5{
-    margin-left: 0 !important;
-  }
+    .projects-bottom {
+        margin-top: 20px;
+    }
+    .projects-bottom h5 {
+        margin-left: 0 !important;
+    }
     .projects-bottom #mc_embed_signup {
         margin: 0;
     }
