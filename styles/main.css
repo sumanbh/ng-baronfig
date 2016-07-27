@@ -74,7 +74,8 @@ nav ul a:hover {
     height: 42vw !important;
 }
 .slider .slides {
-    height: 42vw !important;
+    height: inherit !important;
+    background-color: transparent !important;
 }
 @media (max-width:601px) {
     .home-container .slider {
