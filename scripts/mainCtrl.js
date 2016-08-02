@@ -2,11 +2,11 @@ var app = angular.module('faronBig');
 
 app.controller('mainCtrl', function($state, mainSrv) {
     var vm = this;
+
     // Getting data to the controller
-
     var product = mainSrv.dataArr;
-    // Getting the product ID
 
+    // Getting the product ID
     var getId = $state.params.id;
 
     // Searching the product in the array
@@ -14,7 +14,6 @@ app.controller('mainCtrl', function($state, mainSrv) {
     vm.result = product.find(findProductById);
 
     //Remove the result from the product recommendation on the bottom
-
     vm.recommend = product
                     .filter(function(name){
                       return name.id !== getId;

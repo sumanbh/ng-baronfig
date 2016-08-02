@@ -2,7 +2,7 @@ body {
     border-top: 4.5px solid #80586C;
     background: #683047;
     display: flex;
-    min-height: 100vh;
+    min-height: 125vh;
     flex-direction: column;
 }
 main {
@@ -34,6 +34,8 @@ input[type]:focus:not([readonly]) {
 }
 
 /*ngAnimate ends here*/
+
+/*Navigation styles*/
 
 .nav-wrapper {
     height: 68px;
