@@ -1,1 +1,1 @@
-Trying to clone a full-fledged website to Angular. And learning new things on the way.
+A working clone of http://www.baronfig.com/ written in Angular. Feel free to fork/clone.
