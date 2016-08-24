@@ -22,21 +22,7 @@ app.controller('mainCtrl', function($state, mainSrv) {
     // Calculations depending the amount user wants to buy
     vm.finalPrice = function(num) {
         if (!vm.totalCalc) return parseFloat('0.00').toFixed(2);
-        // Percentage based deductions are stored as string and calculated below. There has to be a better way.
-        if (typeof num === 'string') {
-            // Bundle of two with 5% discount stored as string '5'
-
-            if (num === '5') {
-                var regularPrice = vm.result.price * vm.totalCalc * 2;
-                return (regularPrice - (regularPrice * num / 100)).toFixed(2);
-            }
-            // Bundle of three with 10% discount stored as string '10'
-            else {
-                var regularPrice = vm.result.price * vm.totalCalc * 3;
-                return (regularPrice - (regularPrice * num / 100)).toFixed(2);
-            }
-        }
-        // "Normal" or easy deductions
+        // "Normal" calculations
         return (num * vm.totalCalc).toFixed(2);
     }
 })

@@ -84,11 +84,11 @@ app.service('mainSrv', function($state) {
             name: 'Single Pack',
             price: 12.00
         }, {
-            name: '2 Pack - save 5%',
-            price: '5'
+            name: '2 Pack - save $2',
+            price: 22.00
         }, {
-            name: '3 Pack - save 10%',
-            price: '10'
+            name: '3 Pack - save $5',
+            price: 31.00
         }],
         imgv2:'./images/product-v2/vanguard_v2.jpg'
     }, {
