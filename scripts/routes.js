@@ -4,24 +4,15 @@ angular.module('faronBig')
         $urlRouterProvider.when('/shop/', '/404');
         $urlRouterProvider.otherwise('/404');
 
-
         $stateProvider
             .state('home', {
                 url: '/',
                 templateUrl: './views/home.html',
                 controller: 'homeCtrl as vm'
             })
-            .state('story', {
-                url: '/pages/our-story',
-                templateUrl: './views/ourStory.html'
-            })
             .state('projects', {
                 url: '/pages/projects',
                 templateUrl: './views/projects.html'
-            })
-            .state('login', {
-                url: '/account/login',
-                templateUrl: './views/login.html'
             })
             .state('error', {
                 url: '/404',
@@ -32,7 +23,6 @@ angular.module('faronBig')
                 templateUrl: './views/shop.html',
                 controller: 'mainCtrl as vm'
             });
-
 
     });
     
