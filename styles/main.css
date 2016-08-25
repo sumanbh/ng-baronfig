@@ -2,7 +2,6 @@ body {
     border-top: 4.5px solid #80586C;
     background: #683047;
     display: flex;
-    min-height: 125vh;
     flex-direction: column;
 }
 main {
