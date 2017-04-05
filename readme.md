@@ -1,1 +1,1 @@
-A working clone of http://www.baronfig.com/ written in Angular. Demo at: https://sumanbh.github.io/ng-baron-fig/#/
+A working clone of http://www.baronfig.com/ written in Angular. Demo at: http://suman.io/ng-baronfig/#/
